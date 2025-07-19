@@ -33,7 +33,7 @@ const AnimatedButton = ({
   leftIcon,
   rightIcon,
   className = "",
-  animationType = "bounce" | "fall",
+  animationType = "bounce", 
   ...props
 }: {
   children: string;
@@ -57,6 +57,7 @@ const AnimatedButton = ({
     </Button>
   );
 };
+
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -162,7 +163,7 @@ export default function BlenderMCPLanding() {
           pin: true,
           pinSpacing: true,
           scrub: 0.5,
-          ease: "power2.out",
+          
           onUpdate: (self) => {
             const progress = self.progress;
 
@@ -251,6 +252,7 @@ export default function BlenderMCPLanding() {
           },
         });
       }
+      
 
       // Enhanced card animations
       gsap.utils
@@ -636,6 +638,10 @@ export default function BlenderMCPLanding() {
             Realtime 3D Control via Model Context Protocol
           </p>
           <div className="hero-cta">
+            <a
+              href="#demo"
+              className="nav-item text-sm text-gray-600 hover:text-gray-900 transition-colors word-fall"
+            >
             <AnimatedButton
               size="lg"
               className="btn-hover bg-gray-900 hover:bg-gray-800 px-8 py-4 text-base rounded-full"
@@ -643,8 +649,10 @@ export default function BlenderMCPLanding() {
               rightIcon={<ArrowRight className="w-5 h-5" />}
               animationType="bounce"
             >
+              
               Watch Demo
             </AnimatedButton>
+            </a>
           </div>
         </div>
       </section>
@@ -1191,7 +1199,7 @@ export default function BlenderMCPLanding() {
                 </h3>
 
                 <p className="creator-role text-xl text-blue-600 font-medium mb-6">
-                  AI × 3D Innovation Engineer
+                  Software Engineer
                 </p>
 
                 <p className="creator-bio text-lg text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
