@@ -1136,16 +1136,16 @@ export default function BlenderMCPLanding() {
                     </video>
                   </div> */}
                   <div className="flex items-center space-x-4">
+                    <a href="https://www.youtube.com/watch?v=5q8rlX7BKic" target="_blank">
                     <AnimatedButton
                       className="btn-hover bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full"
                       leftIcon={<Play className="w-4 h-4" />}
                       animationType="bounce"
                     >
-                      Watch Detailed Demo(soon)
+                      Watch Demo on Youtube
                     </AnimatedButton>
-                    <span className="text-gray-500 text-sm">
-                      Complete YouTube Tutorial
-                    </span>
+                    
+                    </a>
                   </div>
                 </div>
               </div>
