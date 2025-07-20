@@ -607,7 +607,7 @@ export default function BlenderMCPLanding() {
               animationType="bounce"
               onClick={() =>
                 window.open(
-                  "https://github.com/pranav-deshmukh/blender-mcp-demo",
+                  "https://github.com/pranav-deshmukh/blender-mcp",
                   "_blank"
                 )
               }
@@ -991,7 +991,7 @@ export default function BlenderMCPLanding() {
                   <div className="bg-gray-100 rounded-lg p-4 mb-4">
                     <code className="text-sm text-gray-800 font-mono block">
                       git clone
-                      https://github.com/pranav-deshmukh/blender-mcp-demo
+                      https://github.com/pranav-deshmukh/blender-mcp
                     </code>
                   </div>
                   <div className="bg-gray-100 rounded-lg p-4 mb-4">
