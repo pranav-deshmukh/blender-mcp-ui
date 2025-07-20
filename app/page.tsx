@@ -33,7 +33,7 @@ const AnimatedButton = ({
   leftIcon,
   rightIcon,
   className = "",
-  animationType = "bounce", 
+  animationType = "bounce",
   ...props
 }: {
   children: string;
@@ -163,7 +163,7 @@ export default function BlenderMCPLanding() {
           pin: true,
           pinSpacing: true,
           scrub: 0.5,
-          
+
           onUpdate: (self) => {
             const progress = self.progress;
 
@@ -252,7 +252,7 @@ export default function BlenderMCPLanding() {
           },
         });
       }
-      
+
 
       // Enhanced card animations
       gsap.utils
@@ -642,16 +642,16 @@ export default function BlenderMCPLanding() {
               href="#demo"
               className="nav-item text-sm text-gray-600 hover:text-gray-900 transition-colors word-fall"
             >
-            <AnimatedButton
-              size="lg"
-              className="btn-hover bg-gray-900 hover:bg-gray-800 px-8 py-4 text-base rounded-full"
-              leftIcon={<Play className="w-5 h-5" />}
-              rightIcon={<ArrowRight className="w-5 h-5" />}
-              animationType="bounce"
-            >
-              
-              Watch Demo
-            </AnimatedButton>
+              <AnimatedButton
+                size="lg"
+                className="btn-hover bg-gray-900 hover:bg-gray-800 px-8 py-4 text-base rounded-full"
+                leftIcon={<Play className="w-5 h-5" />}
+                rightIcon={<ArrowRight className="w-5 h-5" />}
+                animationType="bounce"
+              >
+
+                Watch Demo
+              </AnimatedButton>
             </a>
           </div>
         </div>
@@ -996,7 +996,7 @@ export default function BlenderMCPLanding() {
                   </div>
                   <div className="bg-gray-100 rounded-lg p-4 mb-4">
                     <code className="text-sm text-gray-800 font-mono block">
-                      cd blender-mcp-demo
+                      cd blender-mcp
                     </code>
                   </div>
                   <div className="bg-gray-100 rounded-lg p-4">
@@ -1137,14 +1137,14 @@ export default function BlenderMCPLanding() {
                   </div> */}
                   <div className="flex items-center space-x-4">
                     <a href="https://www.youtube.com/watch?v=5q8rlX7BKic" target="_blank">
-                    <AnimatedButton
-                      className="btn-hover bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full"
-                      leftIcon={<Play className="w-4 h-4" />}
-                      animationType="bounce"
-                    >
-                      Watch Demo on Youtube
-                    </AnimatedButton>
-                    
+                      <AnimatedButton
+                        className="btn-hover bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full"
+                        leftIcon={<Play className="w-4 h-4" />}
+                        animationType="bounce"
+                      >
+                        Watch Demo on Youtube
+                      </AnimatedButton>
+
                     </a>
                   </div>
                 </div>
